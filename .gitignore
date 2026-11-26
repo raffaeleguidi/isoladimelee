@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Build di export (rigenerabili, e troppo pesanti per git)
+build/
+
+# Toolchain locale: Godot + export template (~2.4 GB)
+tools/
+
+# Cache dell'editor Godot
+.godot/
+**/.godot/
+
+# File temporanei
+*.tmp
+*.translation

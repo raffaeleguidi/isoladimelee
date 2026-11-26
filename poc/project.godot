@@ -1,0 +1,44 @@
+; Engine configuration file.
+; POC "Isola di Melee" - adventure 3D cartoon
+
+config_version=5
+
+[application]
+
+config/name="Isola di Melee - POC"
+config/description="Proof of concept di adventure 3D in stile cartoon, con asset CC0."
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.04, 0.09, 0.13, 1)
+boot_splash/show_image=false
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[input_devices]
+
+pointing/emulate_mouse_from_touch=true
+
+[physics]
+
+3d/default_gravity=18.0
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+anti_aliasing/quality/msaa_3d=2
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.12, 0.2, 0.28, 1)
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
